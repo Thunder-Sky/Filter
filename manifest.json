@@ -1,0 +1,19 @@
+{
+  "name": "Sky's Filter",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "this extension restricts the viewing of the web site.",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["block.js"]
+   }],
+   "web_accessible_resources": [{
+    "resources": ["*"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
